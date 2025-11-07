@@ -842,4 +842,26 @@ summary:focus-visible {
     display: none;
   }
 
+  .top-header {
+    border-bottom: 1px solid #ddd;
+  }
 
+  .layout-wrapper {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .card {
+    box-shadow: none;
+    background: white;
+    border-color: #ddd;
+    break-inside: avoid;
+  }
+
+  a {
+    color: inherit;
+  }
+}
