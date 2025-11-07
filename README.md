@@ -337,6 +337,10 @@ Contributions are welcome! To contribute:
 
 ---
 
+<<<<<<< HEAD
+=======
+```
+>>>>>>> 40077fa2e255ab2afe32b0def39269b7fa17718b
 
 ---
 
