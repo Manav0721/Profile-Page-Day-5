@@ -20,7 +20,7 @@
 ## 🚀 Quick Start
 
 ```bash
-git clone https://github.com/Manav0721/Profile-Page-Day-5.git
+git clone https://github.com/Manav0721/Profile_Page_Day-5.git
 cd Profile-Page-Day-5
 # Open index.html in your browser
 ```
