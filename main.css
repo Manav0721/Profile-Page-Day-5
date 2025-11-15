@@ -72,7 +72,6 @@ body::after {
   z-index: 0;
 }
 
-/* Common styles for all shapes */
 .shape {
   position: absolute;
   opacity: 0.08;
@@ -81,7 +80,6 @@ body::after {
   filter: blur(1px);
 }
 
-/* ===== First Shape ===== */
 .shape:nth-child(1) {
   width: 300px;
   height: 300px;
@@ -92,7 +90,6 @@ body::after {
   animation-duration: 25s;
 }
 
-/* ===== Second Shape ===== */
 .shape:nth-child(2) {
   width: 200px;
   height: 200px;
@@ -103,7 +100,6 @@ body::after {
   animation-duration: 30s;
 }
 
-/* ===== Third Shape ===== */
 .shape:nth-child(3) {
   width: 250px;
   height: 250px;
@@ -114,7 +110,6 @@ body::after {
   animation-duration: 35s;
 }
 
-/* ===== Fourth Shape ===== */
 .shape:nth-child(4) {
   width: 180px;
   height: 180px;
@@ -131,13 +126,11 @@ body::after {
   50% { background-position: 100% 50%; }
 }
 
-/* ===== Pattern Movement ===== */
 @keyframes movePattern {
   0% { transform: translate(0, 0); }
   100% { transform: translate(70px, 70px); }
 }
 
-/* ===== Floating Shapes Animation ===== */
 @keyframes float {
   0%, 100% { 
     transform: translate(0, 0) scale(1);
@@ -157,7 +150,6 @@ body::after {
   }
 }
 
-/* ===== Fade In Up Animation ===== */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -169,7 +161,6 @@ body::after {
   }
 }
 
-/* ===== Slide In Animations ===== */
 @keyframes slideInLeft {
   from {
     opacity: 0;
@@ -181,7 +172,6 @@ body::after {
   }
 }
 
-/* ===== Slide In Right Animation ===== */
 @keyframes slideInRight {
   from {
     opacity: 0;
@@ -193,29 +183,17 @@ body::after {
   }
 }
 
-/* ===== Pulse Glow Animation ===== */
-@keyframes pulse-glow {
-  0%, 100% {
-    box-shadow: var(--shadow-default), inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  }
-  50% {
-    box-shadow: var(--shadow-default), var(--accent-glow), inset 0 1px 0 rgba(255, 255, 255, 0.15);
-  }
-}
-
-/* ===== Scale In Animation ===== */
-@keyframes scaleIn {
+@keyframes slideInDown {
   from {
     opacity: 0;
-    transform: scale(0.95);
+    transform: translateY(-30px);
   }
   to {
     opacity: 1;
-    transform: scale(1);
+    transform: translateY(0);
   }
 }
 
-/* ===== Bounce In Animation ===== */
 @keyframes bounce-in {
   0% {
     opacity: 0;
@@ -243,19 +221,6 @@ body::after {
   animation: slideInDown 0.6s ease-out;
 }
 
-/* ===== Slide In Down Animation ===== */
-@keyframes slideInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* ===== Header Content ===== */
 .header-wrapper {
   max-width: 1600px;
   margin: 0 auto;
@@ -265,14 +230,12 @@ body::after {
   gap: 2rem;
 }
 
-/* ===== Header Left ===== */
 .header-left {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-/* ===== Logo ===== */
 .logo {
   width: 50px;
   height: 50px;
@@ -289,7 +252,6 @@ body::after {
   flex-shrink: 0;
 }
 
-/* ===== Header Title ===== */
 .header-title h2 {
   margin: 0;
   font-size: 1.25rem;
@@ -297,21 +259,18 @@ body::after {
   font-weight: 700;
 }
 
-/* Subtitle */
 .header-title p {
   margin: 0;
   font-size: 0.9rem;
   color: var(--text-secondary);
 }
 
-/* ===== Header Right ===== */
 .header-right {
   display: flex;
   gap: 1rem;
   align-items: center;
 }
 
-/* ===== Header Contact Links ===== */
 .header-contact {
   display: flex;
   flex-direction: column;
@@ -319,7 +278,6 @@ body::after {
   text-align: right;
 }
 
-/* Contact Link Styles */
 .header-contact a {
   font-size: 0.9rem;
   color: var(--text-accent);
@@ -327,7 +285,6 @@ body::after {
   transition: color 0.3s ease;
 }
 
-/* Hover Effect for Contact Links */
 .header-contact a:hover {
   color: #f0f0f0;
 }
@@ -350,7 +307,6 @@ body::after {
   animation: slideInLeft 0.6s ease-out 0.1s both;
 }
 
-/* ===== Navigation Menu ===== */
 .nav-menu {
   display: flex;
   flex-direction: column;
@@ -364,7 +320,6 @@ body::after {
   box-shadow: var(--shadow-default);
 }
 
-/* ===== Navigation Items ===== */
 .nav-item {
   display: flex;
   align-items: center;
@@ -377,9 +332,10 @@ body::after {
   cursor: pointer;
   font-weight: 500;
   border: 1px solid transparent;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
-/* Hover and Active States */
 .nav-item:hover,
 .nav-item.active {
   background: var(--item-bg-hover);
@@ -388,14 +344,12 @@ body::after {
   transform: translateX(4px);
 }
 
-/* ===== Navigation Icon and Text ===== */
 .nav-icon {
   font-size: 1.2rem;
   display: flex;
   align-items: center;
 }
 
-/* Navigation Text */
 .nav-text {
   font-size: 0.95rem;
 }
@@ -425,7 +379,6 @@ body::after {
   position: relative;
 }
 
-/* Hover Effect for Cards */
 .card::before {
   content: '';
   position: absolute;
@@ -438,12 +391,10 @@ body::after {
   pointer-events: none;
 }
 
-/* Hover Animation */
 .card:hover::before {
   left: 100%;
 }
 
-/* Card Hover Styles */
 .card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-default), var(--glow-effect),
@@ -453,7 +404,6 @@ body::after {
   border-color: rgba(120, 120, 120, 0.7);
 }
 
-/* Staggered Animation Delays */
 .card:nth-child(1) { animation-delay: 0.1s; }
 .card:nth-child(2) { animation-delay: 0.2s; }
 .card:nth-child(3) { animation-delay: 0.3s; }
@@ -472,7 +422,6 @@ body::after {
   position: relative;
 }
 
-/* Underline Animation */
 .card h3::after {
   content: "";
   position: absolute;
@@ -484,17 +433,43 @@ body::after {
   transition: width 0.4s ease;
 }
 
-/* Expand underline on hover */
 .card:hover h3::after {
   width: 3rem;
 }
 
-/* Card Paragraphs */
 .card p {
   line-height: 1.7;
   margin: 0;
   font-size: 0.95rem;
   color: var(--text-primary);
+}
+
+/* ===== Profile Image ===== */
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.profile-image {
+  width: 100%;
+  max-width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--border-color);
+  box-shadow: var(--shadow-default);
+  margin: 0 auto 1.5rem;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+  box-shadow: var(--glow-effect), var(--shadow-default);
+  border-color: var(--text-accent);
 }
 
 /* ===== Skills List ===== */
@@ -507,7 +482,6 @@ body::after {
   list-style: none;
 }
 
-/* Individual Skill Items */
 .skills-list li {
   background: var(--item-bg);
   backdrop-filter: blur(15px);
@@ -524,7 +498,6 @@ body::after {
   overflow: hidden;
 }
 
-/* Staggered Animation Delays for Skills */
 .skills-list li:nth-child(1) { animation-delay: 0s; }
 .skills-list li:nth-child(2) { animation-delay: 0.05s; }
 .skills-list li:nth-child(3) { animation-delay: 0.1s; }
@@ -536,7 +509,6 @@ body::after {
 .skills-list li:nth-child(9) { animation-delay: 0.4s; }
 .skills-list li:nth-child(10) { animation-delay: 0.45s; }
 
-/* Hover Effect for Skill Items */
 .skills-list li::before {
   content: '';
   position: absolute;
@@ -548,12 +520,10 @@ body::after {
   transition: left 0.6s ease;
 }
 
-/* Hover Animation */
 .skills-list li:hover::before {
   left: 100%;
 }
 
-/* Skill Item Hover Styles */
 .skills-list li:hover {
   background: var(--item-bg-hover);
   transform: translateY(-3px) scale(1.08);
@@ -570,9 +540,10 @@ body::after {
   display: flex;
   flex-direction: column;
   gap: 0.875rem;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-/* Individual Items */
 .project-item,
 .edu-item,
 .contact-item {
@@ -587,9 +558,9 @@ body::after {
   animation: fadeInUp 0.5s ease-out backwards;
   overflow: hidden;
   position: relative;
+  transform-origin: center center;
 }
 
-/* Hover Effect for Items */
 .project-item::before,
 .edu-item::before,
 .contact-item::before {
@@ -604,19 +575,16 @@ body::after {
   pointer-events: none;
 }
 
-/* Hover Animation */
 .project-item:hover::before,
 .edu-item:hover::before,
 .contact-item:hover::before {
   left: 100%;
 }
 
-/* Staggered Animation Delays */
 .project-item:nth-of-type(1) { animation-delay: 0.1s; }
 .project-item:nth-of-type(2) { animation-delay: 0.15s; }
 .project-item:nth-of-type(3) { animation-delay: 0.2s; }
 
-/* Hover Styles */
 .project-item:hover,
 .edu-item:hover,
 .contact-item:hover {
@@ -628,15 +596,15 @@ body::after {
   transform: translateX(4px);
 }
 
-/* Open State Styles */
 .project-item[open],
 .edu-item[open],
 .contact-item[open] {
   background: rgba(70, 70, 70, 0.5);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  transform: scale(1.02);
+  transform-origin: center center;
 }
 
-/* Summary Styles */
 summary {
   list-style: none;
   cursor: pointer;
@@ -648,14 +616,14 @@ summary {
   font-size: 0.95rem;
   user-select: none;
   transition: color var(--transition-speed) ease;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
-/* Remove default marker */
 summary::-webkit-details-marker {
   display: none;
 }
 
-/* Custom Arrow */
 summary::before {
   content: "▸";
   font-size: 1rem;
@@ -669,19 +637,16 @@ summary::before {
   justify-content: center;
 }
 
-/* Rotate arrow when open */
 .project-item[open] summary::before,
 .edu-item[open] summary::before,
 .contact-item[open] summary::before {
   transform: rotate(90deg);
 }
 
-/* Hover Effect for Summary */
 summary:hover {
   color: var(--text-accent);
 }
 
-/* Details Content */
 .project-item p,
 .edu-item p,
 .contact-item p {
@@ -690,10 +655,23 @@ summary:hover {
   padding-left: 1.75rem;
   line-height: 1.6;
   font-size: 0.9rem;
-  animation: fadeInUp 0.3s ease-out;
+  animation: expandContent 0.4s ease-out;
+  transform-origin: center top;
 }
 
-/* Strong Text Styles */
+@keyframes expandContent {
+  from {
+    opacity: 0;
+    transform: scaleY(0.8) translateY(-10px);
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    transform: scaleY(1) translateY(0);
+    max-height: 500px;
+  }
+}
+
 .project-item strong,
 .edu-item strong,
 .contact-item strong {
@@ -701,7 +679,6 @@ summary:hover {
   font-weight: 600;
 }
 
-/* Links in Contact Items */
 .contact-item a {
   color: var(--text-accent);
   text-decoration: none;
@@ -709,7 +686,6 @@ summary:hover {
   transition: color 0.3s ease;
 }
 
-/* Hover Effect for Contact Links */
 .contact-item a:hover {
   color: #f0f0f0;
 }
@@ -730,7 +706,6 @@ summary:hover {
   animation: fadeInUp 0.6s ease-out 0.6s both;
 }
 
-/* Footer Hover Effect */
 .footer:hover {
   background: rgba(50, 50, 50, 0.4);
   border-color: rgba(120, 120, 120, 0.6);
@@ -764,7 +739,6 @@ summary:hover {
   pointer-events: auto;
 }
 
-/* Hover and Active States */
 .to-top:hover {
   background: var(--text-secondary);
   color: var(--bg-dark);
@@ -774,7 +748,6 @@ summary:hover {
   -webkit-backdrop-filter: blur(30px);
 }
 
-/* Active State */
 .to-top:active {
   transform: translateY(-2px) scale(0.95);
 }
@@ -793,159 +766,114 @@ summary:focus-visible {
     gap: 1rem;
     padding: 1rem 1.5rem;
   }
-
-/*==== Sidebar Adjustment ===== */  
   .sidebar {
     width: 200px;
   }
-
-  /*==== Card Padding Adjustment ===== */
   .card {
     padding: 1.5rem;
   }
 }
 
-/* ===== Tablet & Mobile Styles ===== */
 @media (max-width: 1024px) {
   .layout-wrapper {
     flex-direction: column;
     gap: 1rem;
   }
-
-  /*==== Sidebar Full Width ===== */
   .sidebar {
     width: 100%;
   }
-
-  /*==== Navigation Menu Grid Layout ===== */
   .nav-menu {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 0.5rem;
   }
-
-  /*==== Navigation Items Centered ===== */
   .nav-item {
     justify-content: center;
     flex-direction: column;
     text-align: center;
     padding: 0.75rem;
   }
-
-  /*==== Hide Navigation Text ===== */
   .nav-text {
     display: none;
   }
 }
 
-/* ===== Mobile Styles ===== */
 @media (max-width: 768px) {
   .top-header {
     padding: 1rem;
   }
-
-  /*==== Header Wrapper Column Layout ===== */
   .header-wrapper {
     flex-direction: column;
     gap: 1rem;
   }
-
-  /*==== Header Left & Right Full Width ===== */
   .header-left,
   .header-right {
     flex-direction: column;
     width: 100%;
   }
-
-  /*==== Center Header Contact ===== */
   .header-contact {
     text-align: center;
   }
-
-  /*==== Layout Wrapper Padding Adjustment ===== */
   .layout-wrapper {
     padding: 1rem;
   }
-
-  /*==== Navigation Menu Two Columns ===== */
   .nav-menu {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  /*==== Card Padding & Font Size Adjustment ===== */
   .card {
     padding: 1.25rem;
   }
-
-  /*==== Card Title Font Size Adjustment ===== */
   .card h3 {
     font-size: 1.2rem;
   }
-
-  /*==== Skills List Adjustments ===== */
   .skills-list {
     gap: 0.5rem;
   }
-
-  /*==== Skill Item Font Size Adjustment ===== */
   .skills-list li {
     padding: 0.5rem 1rem;
     font-size: 0.85rem;
   }
-
-  /*==== Back to Top Button Size Adjustment ===== */
   .to-top {
     right: 1rem;
     bottom: 1rem;
     width: 2.75rem;
     height: 2.75rem;
   }
-
-  /*==== Floating Shapes Size Adjustment ===== */
   .shape {
     width: 150px !important;
     height: 150px !important;
   }
+  .profile-image {
+    max-width: 150px;
+    height: 150px;
+  }
 }
 
-/* ===== Print Styles ===== */
 @media print {
   body {
     background: white;
   }
-
-  /* Hide Decorative Elements */
   body::before,
   body::after,
   .animated-shapes,
   .to-top {
     display: none;
   }
-
-  /* Simplify Header for Print */
   .top-header {
     border-bottom: 1px solid #ddd;
   }
-
-  /* Layout Adjustments for Print */
   .layout-wrapper {
     flex-direction: column;
   }
-
-  /* Full Width Sidebar for Print */
   .sidebar {
     width: 100%;
   }
-
-  /* Simplify Cards for Print */
   .card {
     box-shadow: none;
     background: white;
     border-color: #ddd;
     break-inside: avoid;
   }
-
-  /* Text Color for Print */
   a {
     color: inherit;
   }

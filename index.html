@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=5.0" />
   <meta name="description" content="Manav Pimparkar - Computer Science Engineer and Full-Stack Developer Profile Page" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <title>Manav Pimparkar - Profile</title>
   <link rel="stylesheet" href="main.css" />
 </head>
@@ -65,11 +67,14 @@
 
     <!-- Main Content -->
     <main class="main-content">
-      
-      <!-- About Section -->
+
+      <!-- About Section with Profile Image -->
       <section id="about" class="card">
         <h3>About Me</h3>
-        <p>I'm an adaptive computer engineering graduate skilled in Java, Python, & modern Web technologies. I enjoy building clean, responsive, and user-friendly applications with attention to accessibility and maintainability.</p>
+        <div class="profile-container">
+          <img src="pic.jpg" alt="Manav Pimparkar" class="profile-image">
+          <p>I'm an adaptive computer engineering graduate skilled in Java, Python, & modern Web technologies. I enjoy building clean, responsive, and user-friendly applications with attention to accessibility and maintainability.</p>
+        </div>
       </section>
 
       <!-- Skills Section -->
@@ -132,7 +137,7 @@
 
       <!-- Footer -->
       <footer class="footer">
-        <p>© 2025 Manav Pimparkar · Built with HTML , CSS & JavaScript</p>
+        <p>© 2025 Manav Pimparkar · Built with HTML, CSS & JavaScript</p>
       </footer>
 
     </main>
@@ -144,4 +149,3 @@
   <script src="main.js"></script>
 </body>
 </html>
-
