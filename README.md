@@ -1,19 +1,24 @@
-# 🚀 Profile Website
+<div align="center">
 
-> Clean, modern portfolio built with HTML & CSS only.
+# 🚀 Manav Pimparkar - Profile Website
 
-![HTML5](https://img.shields.io/badge/HTML-5-orange) 
-![CSS3](https://img.shields.io/badge/CSS-3-blue)
+> Modern animated portfolio built with HTML, CSS & JavaScript
+
+[![Live Demo](https://img.shields.io/badge/Live-Demo-success?style=for-the-badge)](https://manav0721.github.io/Profile_Page_Day-5/)
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+
+🌐 **[View Live Demo](https://manav0721.github.io/Profile_Page_Day-5/)**
 
 ---
 
 ## ✨ Features
 
-- Dashboard layout with sidebar navigation
-- Dark theme with glassmorphism effects
-- Fully responsive design
-- Pure HTML & CSS (No JavaScript!)
-- Fast & lightweight
+Dashboard layout • Glassmorphism design • Smooth animations
+
+Parallax effects • 3D card hover • Responsive design
 
 ---
 
@@ -22,34 +27,17 @@
 ```bash
 git clone https://github.com/Manav0721/Profile_Page_Day-5.git
 cd Profile-Page-Day-5
-# Open index.html in your browser
 ```
+
+Open `index.html` in your browser
 
 ---
 
 ## 📋 What's Inside
 
-**Sections:**
-- About Me
-- Skills (HTML, CSS, JS, Java, Python, C++, SQL, Git)
-- Projects (ML, Android App, Web Analytics)
-- Education (B.TECH - MIT WPU, Pune)
-- Contact
+**About** • **Skills** • **Projects** • **Education** • **Contact**
 
-**Tech Stack:**
-- HTML5 & CSS3
-- CSS Grid & Flexbox
-- CSS Animations
-- Media Queries
-
----
-
-## 🎨 Highlights
-
-- **Dark Theme** with animated gradients
-- **Glassmorphism** design style
-- **Smooth animations** on all interactions
-- **Mobile-first** responsive design
+HTML5 • CSS3 • JavaScript
 
 ---
 
@@ -57,22 +45,22 @@ cd Profile-Page-Day-5
 
 **Manav Pimparkar**
 
-📧 manavpimparkar123@gmail.com  
-🔗 [GitHub](https://github.com/Manav0721)  
+Full-Stack Developer
+
+📧 [manavpimparkar123@gmail.com](mailto:manavpimparkar123@gmail.com)
+
+🔗 [GitHub](https://github.com/Manav0721)
+
 📍 Pune, India
 
 ---
 
-## ⭐ Support
-
-Like this project? Give it a ⭐ star!
+⭐ **Star this repo if you like it!** ⭐
 
 ---
 
-<div align="center">
-
 **Made with ❤️ by Manav Pimparkar**
 
-*Pure HTML & CSS - No frameworks*
+*Pure HTML, CSS & JavaScript — No frameworks*
 
 </div>
